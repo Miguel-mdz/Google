@@ -1,53 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Google</title>
+    <link rel="shortcut icon" href="images/logo-g.png" />
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-    <script src="https://kit.fontawesome.com/fef21c2cfd.js" crossorigin="anonymous"></script>
-    <header class="w-full h-[60px] absolute top-0 ">
-        <nav class="flex justify-end h-auto ">
-            <ul class=" w-[320px] h-auto flex justify-center items-center mt-[12px]">
-                <li class="mr-[16px] text-[14px]">
-                    <a href="" class="cursor-pointer">Gmail</a>
-                </li>
-                <li class="mr-[30px] text-[14px]">
-                    <a href="" class="cursor-pointer">Imágenes</a>
-                </li>
-                <li class="mr-[27px] ">
-                    <a href="" class="cursor-pointer"><img class="w-[17px] h-[17px]" src="images/grid.png" alt=""></a>
-                </li>
-                <li> 
-                    <input type="submit" value="Acceder" class="cursor-pointer bg-blue-600 text-white px-[22px] py-[6px] rounded-[4px]">
-                </li>
-            </ul>
-        </nav>
+  </head>
+  <body>
+    <script
+      src="https://kit.fontawesome.com/fef21c2cfd.js"
+      crossorigin="anonymous"
+    ></script>
+    <header class="w-[100vw] h-[60px] absolute top-0 ">
+      <nav class="flex justify-end h-auto">
+        <ul class="w-[100vw] h-auto flex justify-end items-center mt-[12px]">
+          <li class="mr-[16px] text-[14px]">
+            <a href="" class="cursor-pointer  md:flex hover:underline">Gmail</a>
+          </li>
+      
+           <li class="mr-[30px] text-[14px]">
+            <a href="" class="cursor-pointer  md:flex hover:underline">Imágenes</a>
+          </li>
+          <li class="mr-[20px] ml-[20px]">
+            <a href="" class="cursor-pointer "
+              ><img class="w-[15px] h-[15px]  " src="images/grid.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <input
+              type="submit"
+              value="Acceder"
+              class="items-center bg-blue-600 text-white px-[14px] py-[6px] rounded-[4px] mr-[15px] md:mr-[17px] md:px-[22px]"
+            />
+          </li>
+        </ul>
+      </nav>
     </header>
-    <main class="mt-[60px] flex justify-center items-center flex-col">
-        <section class="w-[560px] flex justify-center items-center mb-[25px] "  >
-            <img src="images/icono-google.svg"  class="right-40 " alt="">
-        </section>
-        <section class="w-[560px]">
-            <div  class="w-[600px] h-[50px] flex  items-center justify-center border-solid  border-[1px] rounded-[100px]" >
-                <span class="ml-[19px]"><i class="fa-solid fa-magnifying-glass  mr-[12px]" style="color: #9297a0;"></i></span>
-                <input type="text" class="w-[560px] h-[40px]">
-                <span><img src="images/b-voz.png" alt="" class="w-[15px] h-[19px] mr-[30px]"></span>
-                <span><img src="images/b-imagen.png" class="w-[20px] h-[20px] mr-[16px]" alt=""></span>
-            </div>
-        </section>
-        <section>
-            <div class="flex-row">
-                <button>Buscar con Google</button>
-            </div>
-        </section>
-        <section>
-            <div class="flex-row">
-                <button>Voy a tener suerte</button>
-            </div>
-        </section>
+    <main class="h-[63vh] w-[100vw] mt-[60px] items-center flex-col md:h-[75vh] md:mt-[68px]">
+      <section
+        class="w-[100vw] flex justify-center items-center mb-[25px] "
+      >
+        <img
+          src="images/icono-google.svg"
+          class="right-40 h-[95px] "
+          alt=""
+        />
+      </section>
+      <section class="flex justify-center" >
+        <div
+          class="w-[93vw] h-[7vh] flex items-center justify-center border-solid border-[1px] rounded-[100px] md:w-[44vw]"
+        >
+          <span class="ml-[20px]"
+            ><i
+              class="fa-solid fa-magnifying-glass mr-[12px]"
+              style="color: #9297a0"
+            ></i
+          ></span>
+          <input type="text" class="w-[90vw]" />
+          <span
+            ><img
+              src="images/b-voz.png"
+              alt=""
+              class="w-[15px] h-[19px] mr-[30px] hover:cursor-pointer"
+          /></span>
+          <span
+            ><img
+              src="images/b-imagen.png"
+              class="w-[20px] h-[20px] mr-[25px] hover:cursor-pointer"
+              alt=""
+          /></span>
+        </div>
+      </section>
+      <section class="w-[100vw] flex items-center justify-center mt-[30px]">
+        <div class="flex items-center justify-center">
+          <div class="flex items-center justify-center">
+            <button
+              class="flex justify-center bg-slate-50 px-[12px] py-[10px] text-[14px] mr-[10px]"
+            >
+              Buscar con Google
+            </button>
+
+            <button
+              class="flex justify-center bg-slate-50 px-[17px] py-[10px] text-[14px]"
+            >
+              Voy a tener suerte
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
+    <footer class=" bg-green-500">
+        <section >
+            <div class="bg-zinc-100  py-[10px] px-[20px]" ><p class="text-gray-500">Venezuela</p></div>
+        </section>
+        <hr class="bg-zinc-100">
+        <section>
+            <div class="bg-zinc-100 py-[13px]  md:flex md:justify-between " >
+                <div class="flex-wrap h-[13vh] flex justify-center w-[100vw] md:h-[3vh] md:flex md:justify-start ">
+                <a href="" class="text-gray-500 mr-[50px]  ml-[10px]  md:mr-[23px]  text-[15px] hover:underline">Sobre Google</a>
+                <a href="" class="text-gray-500 mr-[50px] ml-[10px]   md:mr-[23px] text-[15px] hover:underline">Publicidad</a>
+                <a href="" class="text-gray-500 mr-[50px]  ml-[10px]  md:mr-[23px] text-[15px] hover:underline">Negocios</a>
+                <a href="" class="text-gray-500 mr-[50px] ml-[10px]   md:mr-[23px] text-[15px] hover:underline">Cómo funciona la búsqueda</a>
+                </div>
+                <div class="flex justify-center">
+                <a href="" class="text-gray-500 mr-[33px]  text-[15px]  hover:underline">Privacidad</a>
+                <a href="" class="text-gray-500 mr-[33px] text-[15px] hover:underline">condiciones</a>
+                <a href="" class="text-gray-500 mr-[33px] text-[15px] hover:underline">Preferencias</a>
+                
+                </div>          
+            </div>
+           
+        </section>
+    </footer>
+  </body>
 </html>
